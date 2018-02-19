@@ -24,23 +24,33 @@ header {
   display: none;
 }
 
-.user-account {
+nav.user-account {
   position: absolute;
-  right: 60px;
-  top: 20px;
+  right: 40px;
+  top: 22px;
+  font-size: 18px;
 }
 
-.user-account:hover {
-  font-weight: 700;
+nav.user-account:hover .account-menu li{
   cursor: pointer;
+  visibility: visible;
 }
 
 .user-account-img {
   position: absolute;
-  width: 30px;
+  width: 35px;
   right: 22px;
   top: 15px;
+}
 
+ul.account-menu {
+  list-style: none;
+  display: inline;
+}
+
+.account-menu li {
+  visibility: hidden;
+  padding: 3px; 
 }
 
 nav.menu {
@@ -48,13 +58,13 @@ nav.menu {
   margin-top: 115px;
 }
 
-ul {
+ul.nav-menu {
   display: inline-flex;
   list-style: none;
   padding-left: 0;
 }
 
-ul img {
+ul.nav-menu img {
   width: 30px;
   margin: 0 5px 0 45px;
   position: relative;
@@ -62,7 +72,7 @@ ul img {
   right: 5px;
 }
 
-ul a {
+ul.nav-menu a {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -79,7 +89,6 @@ li:hover {
   top: 79px;
   position: relative;
 }
-
 
 main {
   grid-area: 3 / 1 / 4 / 2;
@@ -235,11 +244,11 @@ h2 {
     margin-top: 5px;
   }
 
-  ul {
+  ul.nav-menu {
     display: block;
   }
 
-  ul img {
+  ul.nav-menu img {
     margin: 0 5px 0 35px;
   }
 
