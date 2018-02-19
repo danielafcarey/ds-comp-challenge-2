@@ -34,6 +34,12 @@ Push your final work to github pages
 
 
 ## Project Screenshots
+### Desktop:
 ![Desktop](assets/desktop.png)
+
+### Tablet:
 ![Tablet](assets/tablet.png)
+
+### Mobile:
 ![Mobile](assets/mobile.png)
+
