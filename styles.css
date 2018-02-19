@@ -20,6 +20,10 @@ header {
   color: white;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .user-account {
   position: absolute;
   right: 60px;
@@ -226,9 +230,71 @@ h2 {
  color: #A1C0C7;
 }
 
-@media only screen and (min-width: 1009px) {
+@media only screen and (max-width: 1009px) {
+  nav.menu {
+    margin-top: 5px;
+  }
 
+  ul {
+    display: block;
+  }
+
+  ul img {
+    margin: 0 5px 0 35px;
+  }
+
+  li {
+    padding-bottom: 20px;
+  }
 }
+
+@media only screen and (max-width: 470px) {
+  body {
+    display: grid;
+    grid-template-rows: 100px 100px 100%;
+  }
+
+  .user-account,
+  .user-account-img, 
+  nav.menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+    background: url("assets/hamburger-menu.png");
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 25px 0 0 25px;
+  }
+
+  .logo {
+    right: 20px;
+    top: 14px;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 34px;
+    margin-left: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 60px 0 0 17px
+  }
+
+  main {
+    margin-left: 10px;
+    justify-content: center;
+  }
+
+  .card {
+    margin-left: 0;
+  }
+}
+
 
 
 
